@@ -1,0 +1,37 @@
+.header {
+	position: relative;
+	display: flex;
+	min-height: 76px;
+	align-items: center;
+	padding: 0 max(24px, calc((100% - 1040px) / 2));
+	border-bottom: 1px solid var(--color-line);
+	background: rgba(8, 11, 15, 0.86);
+}
+
+.header::before {
+	width: 3px;
+	height: 22px;
+	margin-right: 13px;
+	background: var(--color-red);
+	content: '';
+}
+
+.header h1 {
+	margin: 0;
+	color: var(--color-text);
+	font-size: 15px;
+	font-weight: 600;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+	.header {
+		min-height: 64px;
+		padding-inline: 16px;
+	}
+
+	.header h1 {
+		font-size: 13px;
+	}
+}

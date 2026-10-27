@@ -6,6 +6,6 @@ function Header() {
             <h1>Sistema de cadastro de Usuarios</h1>
         </header>
     )
-}gi
+}
 
 export default Header
