@@ -1,0 +1,9 @@
+.about-page {
+  background:
+    radial-gradient(ellipse at 0 100%, rgba(18, 59, 112, 0.09), transparent 42%),
+    #fff;
+}
+
+.about-page::before {
+  content: 'NOSSA HISTÓRIA';
+}

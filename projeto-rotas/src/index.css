@@ -1,0 +1,89 @@
+:root {
+  font-family: Inter, 'Segoe UI', Roboto, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #26364a;
+  background: #f2f5f9;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+#root > div {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root > div > main {
+  width: min(100% - 40px, 1050px);
+  margin: 0 auto;
+  padding: 54px 0;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.page-panel {
+  position: relative;
+  min-height: 270px;
+  padding: clamp(32px, 7vw, 72px);
+  overflow: hidden;
+  border: 1px solid #e1e7ef;
+  border-radius: 20px;
+  box-shadow: 0 18px 45px rgba(16, 44, 80, 0.09);
+  box-sizing: border-box;
+  isolation: isolate;
+}
+
+.page-panel::before {
+  display: block;
+  margin-bottom: 20px;
+  color: #e31b3d;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.page-panel h1 {
+  max-width: 720px;
+  margin: 0 0 16px;
+  color: #123b70;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 850;
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+}
+
+.page-panel p {
+  max-width: 620px;
+  color: #53647a;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 560px) {
+  #root > div > main {
+    width: min(100% - 28px, 1050px);
+    padding: 32px 0;
+  }
+
+  .page-panel {
+    min-height: 240px;
+    border-radius: 16px;
+  }
+}
+
+h1,
+h2 {
+  font-family: inherit;
+}
