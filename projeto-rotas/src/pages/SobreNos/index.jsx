@@ -7,4 +7,4 @@ export function SobreNos() {
             <p>Conheça mais sobre a Contabilidade Simples.</p>
         </div>
     )
-}
+} 
