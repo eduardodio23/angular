@@ -1,0 +1,78 @@
+.services-page {
+  background:
+    radial-gradient(ellipse at 100% 0, rgba(227, 27, 61, 0.08), transparent 38%),
+    #fff;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #e31b3d;
+  font-size: 0.75rem;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+}
+
+.services-page .section-intro,
+.careers-page .section-intro {
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.service-card {
+  padding: 22px;
+  border: 1px solid #e1e7ef;
+  border-left: 4px solid #123b70;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.service-card:nth-child(even) {
+  border-left-color: #e31b3d;
+}
+
+.service-card > span {
+  color: #e31b3d;
+  font-size: 0.75rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+}
+
+.service-card h2 {
+  margin: 8px 0;
+  color: #123b70;
+  font-size: 1.15rem;
+}
+
+.service-card p {
+  font-size: 0.94rem;
+}
+
+.section-cta {
+  display: inline-flex;
+  margin-top: 28px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: #123b70;
+  color: #fff;
+  font-weight: 750;
+  text-decoration: none;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.section-cta:hover {
+  transform: translateY(-2px);
+  background: #e31b3d;
+}
+
+@media (max-width: 600px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}

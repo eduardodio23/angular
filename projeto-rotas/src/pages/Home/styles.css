@@ -5,5 +5,140 @@
 }
 
 .home-page::before {
-  content: 'TRADIÇÃO • PAIXÃO • ORGULHO';
+  content: none;
+}
+
+.home-hero {
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 6vw, 64px);
+}
+
+.bahia-badge {
+  width: 142px;
+  min-width: 142px;
+  aspect-ratio: 0.82;
+  padding: 17px 12px 14px;
+  clip-path: polygon(0 0, 100% 0, 100% 68%, 50% 100%, 0 68%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #123b70;
+  box-shadow: 0 12px 28px rgba(18, 59, 112, 0.22);
+  box-sizing: border-box;
+  color: #fff;
+  text-align: center;
+}
+
+.badge-star {
+  color: #fff;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.bahia-badge strong {
+  margin-top: 3px;
+  font-size: 1.7rem;
+  line-height: 1.05;
+  letter-spacing: 0.08em;
+}
+
+.badge-name {
+  margin-top: 2px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+}
+
+.badge-stripes {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.badge-stripes i {
+  height: 5px;
+  background: #fff;
+}
+
+.badge-stripes i:nth-child(2) {
+  background: #e31b3d;
+}
+
+.home-copy {
+  text-align: left;
+}
+
+.home-copy .home-eyebrow {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #e31b3d;
+  font-size: 0.75rem;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+}
+
+.supporter-phrases {
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.supporter-phrases article {
+  min-height: 112px;
+  padding: 18px;
+  border: 1px solid #e1e7ef;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+}
+
+.supporter-phrases article span {
+  color: #e31b3d;
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+}
+
+.supporter-phrases article p {
+  margin-top: 8px;
+  color: #123b70;
+  font-size: 0.96rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+@media (max-width: 680px) {
+  .home-hero {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .bahia-badge {
+    width: 112px;
+    min-width: 112px;
+    padding: 12px 10px 11px;
+  }
+
+  .badge-stripes {
+    margin-top: 6px;
+    gap: 2px;
+  }
+
+  .badge-stripes i {
+    height: 4px;
+  }
+
+  .supporter-phrases {
+    margin-top: 28px;
+    grid-template-columns: 1fr;
+  }
+
+  .supporter-phrases article {
+    min-height: 0;
+  }
 }

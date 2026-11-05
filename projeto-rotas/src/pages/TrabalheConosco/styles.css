@@ -1,0 +1,39 @@
+.careers-page {
+  background:
+    radial-gradient(ellipse at 0 100%, rgba(18, 59, 112, 0.1), transparent 44%),
+    #fff;
+}
+
+.careers-highlight {
+  max-width: 760px;
+  padding: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  border: 1px solid #e1e7ef;
+  border-radius: 14px;
+  background: linear-gradient(110deg, rgba(18, 59, 112, 0.06), rgba(227, 27, 61, 0.05));
+}
+
+.careers-highlight > span {
+  color: #e31b3d;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.careers-highlight h2 {
+  margin: 0 0 8px;
+  color: #123b70;
+  font-size: 1.2rem;
+}
+
+.careers-highlight p {
+  font-size: 0.97rem;
+}
+
+@media (max-width: 560px) {
+  .careers-highlight {
+    padding: 18px;
+    gap: 12px;
+  }
+}
