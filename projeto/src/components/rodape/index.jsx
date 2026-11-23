@@ -1,14 +1,16 @@
 import './styles.css';
 
-export default function Cabecalho() {
+export default function Rodape() {
+    const anoAtual = new Date().getFullYear();
     return (
-       <header>
-        <Link to="/">Home</Link>
+       <div>
+        <footer>
+            <p>
+                &copy; {anoAtual} - Todos os direitos reservados.
+            </p>
+            <p>SENAI - BAHIA</p>
+        </footer>
 
-        <nav>
-            <Link to='/cadastro'>Cadastrar</Link>
-            <Link to='/usuarios'>Relatório</Link>
-        </nav>
-       </header>
+       </div>
     )
 }

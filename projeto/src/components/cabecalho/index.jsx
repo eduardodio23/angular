@@ -8,7 +8,7 @@ export default function Cabecalho() {
 
         <nav>
             <NavLink to='/cadastro'>Cadastrar</NavLink>
-            <NavLink to='/usuarios'>Relatório</NavLink>
+            <NavLink to='/listar-usuarios'>Usuários</NavLink>
         </nav>
        </header>
     )
