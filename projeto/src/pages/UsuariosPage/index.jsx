@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import './style.css';
-import api from './services/api';
+import api from '../../services/api';
 
 export default function UsuariosPage() {
     const [usuarios, setUsuarios] = useState([]);
